@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.login">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="150dp"
+         android:layout_height="100dp"
+         android:layout_marginTop="52dp"
+         android:src="@mipmap/appicon"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.498"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <EditText
+         android:id="@+id/editTextname"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="44dp"
+         android:layout_marginEnd="20dp"
+         android:inputType="textEmailAddress"
+         android:background="@drawable/back_ground_white"
+         android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+         android:hint=" Enter Name"
+         android:padding="10dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+     <EditText
+         android:id="@+id/editnewemail"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="24dp"
+         android:layout_marginEnd="20dp"
+         android:background="@drawable/back_ground_white"
+         android:drawableLeft="@drawable/ic_baseline_email"
+         android:hint="Enter Email"
+         android:padding="10dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:inputType="textEmailAddress"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/editTextname" />
+
+     <EditText
+         android:id="@+id/phone"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginEnd="20dp"
+         android:background="@drawable/back_ground_white"
+         android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+         android:hint=" Enter Phone"
+         android:inputType="phone"
+         android:padding="10dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/editnewemail" />
+
+
+     <EditText
+         android:id="@+id/editnewpassword"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginEnd="20dp"
+         android:background="@drawable/back_ground_white"
+         android:drawableLeft="@drawable/ic_baseline_lock"
+         android:hint=" PassWord"
+         android:inputType="textPassword"
+         android:padding="10dp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+     <Button
+         android:id="@+id/buttoncreate"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="48dp"
+         android:background="@drawable/loginground"
+         android:text="Create Account"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.498"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/editnewpassword" />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
